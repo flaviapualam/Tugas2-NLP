@@ -1,4 +1,8 @@
-# Implementasi Decoder-only Transformer
+# Tugas 2 - Implementasi Arsitektur Transformer
+**Nama:** Flavia Hidayriamraata Pualam  
+**NIM:** 22/494376/TK/54219
+
+## Implementasi Decoder-only Transformer
 
 Implementasi arsitektur decoder-only Transformer (GPT-style) dari awal menggunakan NumPy, tanpa menggunakan library deep learning apa pun.
 
@@ -9,6 +13,12 @@ Implementasi arsitektur decoder-only Transformer (GPT-style) dari awal menggunak
 - Layer normalization (pre-norm)
 - Weight tying antara embedding input dan proyeksi output
 - Implementasi murni dengan NumPy (tanpa framework eksternal)
+  
+## Clone repository
+```bash
+git clone https://github.com/flaviapualam/Tugas2-NLP.git
+cd Tugas2-NLP
+```
 
 ## Persiapan
 
@@ -54,7 +64,7 @@ logits, next_token_probs = model.forward(token_ids)
 
 ## Bukti Uji Sederhana
 
-### 1. Tes Utama (`transformer.py`)
+### 1. Tes Utama
 ```
 Testing Decoder-only Transformer
 ✓ Shape verification: True
@@ -76,7 +86,7 @@ Testing Decoder-only Transformer
   Parameter efficiency: 640 params (saved 640, 50.0% reduction)
 ```
 
-### 2. Tes Komponen (`demo.py`)
+### 2. Tes Komponen
 ```
 COMPONENT TESTING
 ✓ Token Embedding: (2, 3) → (2, 3, 8)
